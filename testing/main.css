@@ -1,0 +1,93 @@
+.navega {
+	text-align: center;
+}
+ul {
+	display: inline;
+}
+li {
+	display: inline-flex;
+}
+.tab-left {
+	float: left;
+	margin-left: 3%;
+	margin-top: 3%;
+	position: relative;
+}
+.tab-right {
+	float: right;
+	margin-right: 3%;
+	margin-top: 3%;
+	position: relative;
+}
+.item {
+	font-size: 36px;
+	padding: 2rem;
+	color: blue;
+	text-decoration: none;
+}
+.slogan {
+	padding: 1%;
+	font-size: 42px;
+}
+.main {
+	margin-top: 2%;
+	text-align: center;
+}
+
+.slider {
+	width: 1000px;
+	position: relative;
+	margin: auto;
+}
+
+.fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@keyframes fade {
+	from {
+		opacity: 0.4;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.slides {
+	display: none;
+}
+
+.next .prev {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+	color: #f2f2f2;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
